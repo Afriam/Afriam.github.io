@@ -77,7 +77,7 @@ function sendMail(event) {
 
   // Send email using Email.js
   emailjs
-    .send("service_kocf3in", "template_cbcrfih", parms)
+    .send("service_kocf3in", "template_agv56g9", parms) // Updated Template ID
     .then(() => {
       // Show success notification
       notificationMessage.textContent = "Message sent successfully!";
@@ -97,7 +97,7 @@ function sendMail(event) {
       console.error("Error sending email: ", error);
     });
 
-  // Close notification when the close button is clicked
+  // Close notification when the close button is clicked (move outside .then/.catch)
   notificationClose.addEventListener("click", () => {
     notification.classList.remove("show");
   });
