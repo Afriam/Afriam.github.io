@@ -77,7 +77,7 @@ function sendMail(event) {
 
   // Send email using Email.js
   emailjs
-    .send("service_kocf3in", "template_agv56g9", parms) // Updated Template ID
+    .send("service_kocf3in", "template_cbcrfih", parms) // Updated Template ID
     .then(() => {
       // Show success notification
       notificationMessage.textContent = "Message sent successfully!";
