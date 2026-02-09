@@ -76,7 +76,7 @@ function sendMail(event) {
 
   // Send email using Email.js
   emailjs
-    .send("service_kocf3in", "template_cbcrfih", parms)
+    .send("service_7xi796q", "template_xndfslq", parms)
     .then(() => {
       // Show success notification
       notificationMessage.textContent = "Message sent successfully!";
