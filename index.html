@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Afriam Mana-ing — BSIT graduate (2026) and System Developer at the Provincial Treasurer's Office.">
+    <meta name="theme-color" content="#121212">
+    <title>Afriam Mana-ing | System Developer</title>
+    <link rel="icon" href="mylogo.jpg">
+
+    <!-- Apply saved / system theme before first paint so there is no flash -->
+    <script>
+        (function () {
+            var theme;
+            try { theme = localStorage.getItem("theme"); } catch (e) {}
+            if (theme !== "light" && theme !== "dark") {
+                theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            }
+            document.documentElement.setAttribute("data-theme", theme);
+            document.documentElement.classList.add("js");
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="holographic-bg" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a href="#home" class="logo">Afriam <span>Mana-ing</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light mode">
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Home -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <p class="eyebrow"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> BSIT Graduate · Class of 2026</p>
+                    <h1>Hey, I'm <span class="accent">Afriam Mana-ing</span></h1>
+                    <p class="typewriter">I'm a <span class="typewriter-text" aria-live="polite">System Developer</span><span class="caret" aria-hidden="true">|</span></p>
+                    <p class="lead">
+                        System Developer at the <strong>Provincial Treasurer's Office</strong> and a 2026 BSIT graduate of
+                        St. Louis College of Bulanao. I build practical, easy-to-use web systems that make everyday office work faster.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Afriam" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1ENFdPJVxQ/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="mailto:afriammanaing144@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="assets/Profile.jpg" alt="Portrait of Afriam Mana-ing" width="960" height="960">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container about-grid">
+                <div class="about-image reveal">
+                    <img src="assets/aboutme.png" alt="Afriam giving a thumbs up" width="678" height="1106" loading="lazy">
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I'm a Bachelor of Science in Information Technology graduate (2026) from St. Louis College of Bulanao,
+                        now working as a <strong>System Developer at the Provincial Treasurer's Office</strong>.
+                    </p>
+                    <p>
+                        For my capstone, I led our group and developed the <strong>Employee Records Management with Leave
+                        Application System</strong>, which we successfully defended. I enjoy turning paper-based processes into
+                        simple, reliable web systems, and I also create graphic designs using Canva.
+                    </p>
+
+                    <h3 class="sub-title">Skills &amp; Tools</h3>
+                    <ul class="chips" aria-label="Skills">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Node.js</li><li>XML</li>
+                        <li>C++</li><li>C#</li><li>VB.NET</li><li>Canva</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title center reveal">Experience &amp; Education</h2>
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <span class="timeline-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+                        <div class="panel">
+                            <span class="badge">Present</span>
+                            <h3>System Developer</h3>
+                            <p class="meta">Provincial Treasurer's Office</p>
+                            <p>Develops and maintains web-based systems that support the office's day-to-day operations.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                        <div class="panel">
+                            <span class="badge">2026</span>
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p class="meta">St. Louis College of Bulanao</p>
+                            <p>Graduated with foundations in web development, programming, and systems analysis.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span>
+                        <div class="panel">
+                            <span class="badge">Capstone · Defended</span>
+                            <h3>Group Leader &amp; Lead Developer</h3>
+                            <p class="meta">Employee Records Management with Leave Application System</p>
+                            <p>Led the capstone team and developed the system, then successfully defended it before the panel.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title center reveal">Projects</h2>
+
+                <!-- Featured capstone -->
+                <article class="featured panel reveal">
+                    <div class="featured-visual" aria-hidden="true">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <div class="featured-body">
+                        <span class="badge"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Capstone Project · Successfully Defended</span>
+                        <h3>Employee Records Management with Leave Application System</h3>
+                        <p>
+                            A web-based system that keeps employee records in one place and lets employees file leave
+                            applications online, cutting the time spent on paper forms and manual follow-ups.
+                        </p>
+                        <p class="role"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Role: Group Leader &amp; Lead Developer — I developed the system.</p>
+                    </div>
+                </article>
+
+                <h3 class="category-title reveal">Web Projects</h3>
+                <div class="card-grid">
+                    <article class="card reveal">
+                        <div class="card-media">
+                            <img src="assets/appointment.png" alt="Doctor appointment system screenshot" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Doctor Appointment System</h4>
+                            <p>A web project that lets users book an appointment with a doctor.</p>
+                            <a href="https://vt.tiktok.com/ZSBeNpRdY/" target="_blank" rel="noopener noreferrer" class="card-link">Watch demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-media placeholder" aria-hidden="true">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Student Jobs Finder</h4>
+                            <p>A SaaS concept that helps users find jobs and schedule interviews on time.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="category-title reveal">Graphic Designs</h3>
+                <div class="card-grid">
+                    <article class="card reveal">
+                        <div class="card-media">
+                            <img src="assets/c.png" alt="Barangay fiesta and summer league poster" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Barangay Fiesta &amp; Summer League</h4>
+                            <p>Poster for our first Barangay Fiesta and Summer League Season 2.</p>
+                            <a href="https://www.canva.com/design/DAGdXw5RzqQ/8zwre6YJcqiLrjKgff-J9A/view?utm_content=DAGdXw5RzqQ&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h1b0262a8e5" target="_blank" rel="noopener noreferrer" class="card-link">View design <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-media">
+                            <img src="assets/a.png" alt="Birthday card design" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Birthday Card</h4>
+                            <p>A personalized birthday card made for a friend.</p>
+                            <a href="https://www.canva.com/design/DAGqUWv76N8/xCK8Itcl48-m6yGoO0qcCw/view?utm_content=DAGqUWv76N8&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h70d7707046" target="_blank" rel="noopener noreferrer" class="card-link">View design <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-media">
+                            <img src="assets/b.png" alt="Graduation tarpaulin design" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Graduation Tarpaulin</h4>
+                            <p>A tarpaulin-style design for a graduating student.</p>
+                            <a href="https://www.canva.com/design/DAGqTzhupas/7GOwUtO10iI0bs6MxMTQ4Q/view?utm_content=DAGqTzhupas&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h9b8161e1b0" target="_blank" rel="noopener noreferrer" class="card-link">View design <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <h2 class="section-title">Contact</h2>
+                    <p>Have a project, an opportunity, or a question? Send me a message or reach me directly.</p>
+                    <ul class="contact-list">
+                        <li><a href="mailto:afriammanaing144@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> afriammanaing144@gmail.com</a></li>
+                        <li><a href="https://github.com/Afriam" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> github.com/Afriam</a></li>
+                        <li><a href="https://www.facebook.com/share/1ENFdPJVxQ/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook</a></li>
+                    </ul>
+                </div>
+
+                <form id="contact-form" class="panel reveal" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name" placeholder="e.g. Juan Dela Cruz">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="e.g. delacruz00@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2026</span> Afriam D. Mana-ing. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">
+        <p id="toast-message"></p>
+        <button type="button" id="toast-close" class="toast-close" aria-label="Close notification"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
